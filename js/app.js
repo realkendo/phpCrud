@@ -1,3 +1,3 @@
-window.onload(()=>{
-    console.log("loaded");
-});
+window.onload = () =>{
+  console.log("loaded");
+}
