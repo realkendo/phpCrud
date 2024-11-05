@@ -1,4 +1,50 @@
-img{
-    width: 50px;
-    height: 50px;
+:root{
+  --myBlue: #0c5ddc;
+}
+
+td img{
+  width: 50px;
+  height: 50px;
+}
+
+table tr td{
+  vertical-align: middle;
+}
+
+td button{
+  margin: 5px;
+  height: 40px;
+  width: 50px;
+}
+
+td button i{
+  font-size: 15px;
+}
+
+.modal-header{
+  background: var(--myBlue);
+  color: #fff;
+}
+
+.modal-body form{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.modal-body form .imgholder{
+  height: 200px;
+  width: 200px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.imgholder .upload input
+
+.modal-body form .inputField{
+  flex-basis: 68%;
+  border-left: 5px groove var(--myBlue);
+  padding-left: 20px;
 }
