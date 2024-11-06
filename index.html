@@ -81,7 +81,7 @@
               <td>Guard</td>
               <td>12/05/2018</td>
               <td>
-                <button class="btn btn-success"><i class="bi bi-eye"></i></button>
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#readData" ><i class="bi bi-eye"></i></button>
                 <button class="btn btn-warning"><i class="bi bi-pencil-square"></i></button>
                 <button class="btn btn-danger"><i class="bi bi-trash"></i></button>
               </td>
@@ -154,7 +154,72 @@
           </form>
         </div>
 
+        <div class="modal-footer">
+          <button type="submit" form="myForm" class="bnt btn-primary submit">Submit</button>
+        </div>
 
+
+        </div>
+      </div>
+  </div>
+
+  <!-- read data modal -->
+  <div class="modal fade" id="readData" >
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <!-- modal header -->
+        <div class="modal-header">
+          <h4 class="modal-title">PROFILE</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- modal body -->
+        <div class="modal-body">
+          <form action="#" id="myForm">
+            <!-- image holder -->
+            <div class="card imgholder">
+                <img src="./img/profile.webp" alt="" width="200" height="200">
+            </div>
+
+            <div class="inputField">
+              <div>
+                <label for="name">Name: </label>
+                <input type="text" name="" id="name" disabled>
+              </div>
+
+              <div>
+                <label for="age">Age: </label>
+                <input type="number" name="" id="age" disabled>
+              </div>
+
+              <div>
+                <label for="city">City: </label>
+                <input type="text" name="" id="city" disabled>
+              </div>
+
+              <div>
+                <label for="email">Email: </label>
+                <input type="text" name="" id="email" disabled>
+              </div>
+
+              <div>
+                <label for="phone">Phone: </label>
+                <input type="phone" name="" id="phone" minlength="11" maxlength="11" disabled>
+              </div>
+
+              <div>
+                <label for="post">Post: </label>
+                <input type="text" name="" id="post" disabled>
+              </div>
+
+              <div>
+                <label for="sDate">Start Date: </label>
+                <input type="date" name="" id="sDate" disabled>
+              </div>
+            </div>
+
+          </form>
+        </div>
         </div>
       </div>
   </div>
